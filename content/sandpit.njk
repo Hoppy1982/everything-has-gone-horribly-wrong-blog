@@ -1,0 +1,13 @@
+---
+layout: layouts/post.njk
+eleventyNavigation:
+  key: Sandpit
+  order: 4
+---
+<h1>Sandpit</h1>
+
+<h2>All collections</h2>
+
+{% for entry in collections.all | eleventyNavigation %}
+  {% highlight "json" %}{{ entry | dump(2) | safe }}{% endhighlight %}
+{% endfor %}
