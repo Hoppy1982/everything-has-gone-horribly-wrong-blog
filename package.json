@@ -20,21 +20,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://www.placeholder.com.git"
+    "url": "https://github.com/Hoppy1982/everything-has-gone-horribly-wrong-blog.git"
   },
   "author": {
     "name": "Mark Hopcraft",
-    "email": "mark82hopcraft@gmail.com",
-    "url": "https://www.placeholder.com"
+    "email": "mark82hopcraft@gmail.com"
   },
   "license": "MIT",
   "engines": {
     "node": ">=20"
   },
   "bugs": {
-    "url": "https://www.placeholder.com"
+    "url": "https://github.com/Hoppy1982/everything-has-gone-horribly-wrong-blog/issues"
   },
-  "homepage": "https://www.placeholder.com",
+  "url": "https://effervescent-meerkat-dd668e.netlify.app/",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^3.1.1",

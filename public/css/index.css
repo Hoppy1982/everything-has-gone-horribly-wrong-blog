@@ -100,11 +100,6 @@ main :first-child {
 header {
   border-bottom: 1px dashed var(--color-gray-20);
 }
-header:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 .links-nextprev {
   list-style: none;
@@ -149,15 +144,17 @@ header {
   gap: 1em 0.5em;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   padding: 1em;
 }
-.home-link {
-  font-size: 1em; /* 16px /16 */
-  font-weight: 700;
-  margin-right: 2em;
+.github-link {
+  margin-left: 2em;
 }
-.home-link:link:not(:hover) {
-  text-decoration: none;
+.github-link:hover svg path {
+  transition: fill 0.3s;
+}
+.github-link:hover svg path {
+  fill: #333;
 }
 
 /* Nav */
