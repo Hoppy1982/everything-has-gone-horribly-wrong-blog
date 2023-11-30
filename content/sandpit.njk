@@ -1,13 +1,40 @@
 ---
-layout: layouts/post.njk
+layout: layouts/base.njk
 eleventyNavigation:
   key: Sandpit
   order: 4
+title: Sandpit
+description: A test page to try out 11ty features.
 ---
+
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+{%- css %}{% include "public/css/prism-customisation.css" %}{%- endcss %}
+
 <h1>Sandpit</h1>
 
-<h2>All collections</h2>
+<p>{{ description }}</p>
+
+<h2>collections.all</h2>
 
 {% for entry in collections.all | eleventyNavigation %}
   {% highlight "json" %}{{ entry | dump(2) | safe }}{% endhighlight %}
+{% endfor %}
+
+<h2>All collections</h2>
+{% for key, value in collections %}
+  <li>{{ key }}</li>
+{% endfor %}
+
+<h2>***</h2>
+{% for key, value in collections %}
+  <li>
+    {% for collection in collections[key] %}
+      {{ key }}: {{ collection.data.title }},
+    {% endfor %}
+  </li>
+{% endfor %}
+
+<h2>All collections</h2>
+{% for post in collections.posts %}
+  <li>{{ post.data.title }}</li>
 {% endfor %}

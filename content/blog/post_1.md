@@ -3,8 +3,7 @@ nPost: 1
 title: This is post 1.
 description: Placeholder.
 date: 2023-11-29
-tags:
-  - extag2
+tags: extag2
 ---
 
 Words.
